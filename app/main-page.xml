@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <ActionBar title="Healthy GYF" class="main-bar" />
+    
+    <ScrollView>
+        <StackLayout class="p-4">
+            <!-- Control de Tiempo -->
+            <StackLayout class="mb-6 p-4 bg-purple-50 rounded-lg">
+                <Label text="Control de Tiempo" class="text-xl font-bold mb-2" />
+                <Label text="{{ screenTimeFormatted }}" class="text-lg mb-2" />
+                <Button text="{{ isTracking ? 'Detener' : 'Iniciar' }}" 
+                        tap="{{ toggleTracking }}" 
+                        class="btn" />
+            </StackLayout>
+
+            <!-- Protección Visual -->
+            <StackLayout class="mb-6 p-4 bg-purple-50 rounded-lg">
+                <Label text="Protección Visual" class="text-xl font-bold mb-2" />
+                <Button text="{{ isFilterEnabled ? 'Desactivar Filtro' : 'Activar Filtro' }}" 
+                        tap="{{ toggleFilter }}" 
+                        class="btn" />
+            </StackLayout>
+
+            <!-- Pausas Activas -->
+            <StackLayout class="mb-6 p-4 bg-purple-50 rounded-lg">
+                <Label text="Pausas Activas" class="text-xl font-bold mb-2" />
+                <Button text="Ejercicio Aleatorio" 
+                        tap="{{ showRandomExercise }}" 
+                        class="btn" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Configuración" class="main-bar" />
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Configuración de Pantalla" class="text-xl font-bold mb-4" />
+            <Label text="Ajusta el brillo y el contraste de tu pantalla para reducir la fatiga visual." 
+                   textWrap="true" 
+                   class="mb-4" />
+            
+            <Label text="Consejos de Uso" class="text-xl font-bold mb-4" />
+            <Label text="• Toma descansos regulares" class="mb-2" />
+            <Label text="• Mantén una buena postura" class="mb-2" />
+            <Label text="• Parpadea frecuentemente" class="mb-2" />
+            <Label text="• Ajusta la iluminación de tu entorno" class="mb-2" />
+        </StackLayout>
+    </ScrollView>
+</Page>

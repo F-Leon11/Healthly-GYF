@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Page {
+    background-color: white;
+}
+
+.btn {
+    background-color: #7c3aed;
+    color: white;
+    font-size: 18;
+    padding: 10;
+    margin: 10;
+    border-radius: 8;
+}
+
+.main-bar {
+    background-color: #7c3aed;
+    color: white;
+}
+
+.bg-purple-50 {
+    background-color: #faf5ff;
+}
+
+.text-xl {
+    font-size: 20;
+}
+
+.text-lg {
+    font-size: 18;
+}
+
+.mb-2 {
+    margin-bottom: 8;
+}
+
+.mb-4 {
+    margin-bottom: 16;
+}
+
+.mb-6 {
+    margin-bottom: 24;
+}
+
+.p-4 {
+    padding: 16;
+}
+
+.rounded-lg {
+    border-radius: 8;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+TabView {
+    tab-text-color: #666666;
+    selected-tab-text-color: #7c3aed;
+    tab-background-color: white;
+    android-selected-tab-highlight-color: #7c3aed;
+}

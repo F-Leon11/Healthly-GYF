@@ -1,0 +1,1 @@
+node_modules/@nativescript/ios/framework/internal/XCFrameworks.zip filter=lfs diff=lfs merge=lfs -text

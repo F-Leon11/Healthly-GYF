@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TabView androidTabsPosition="bottom">
-    <TabViewItem title="Inicio" iconSource="res://home">
+    <TabViewItem title="Inicio" icon="res://home">
         <Frame defaultPage="main-page" />
     </TabViewItem>
-    <TabViewItem title="Educación" iconSource="res://education">
+    <TabViewItem title="Educación" icon="res://education">
         <Frame defaultPage="components/education-page" />
     </TabViewItem>
-    <TabViewItem title="Ajustes" iconSource="res://settings">
+    <TabViewItem title="Ajustes" icon="res://settings">
         <Frame defaultPage="components/settings-page" />
     </TabViewItem>
 </TabView>

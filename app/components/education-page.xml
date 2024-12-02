@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
     <ActionBar title="Recursos Educativos" class="main-bar" />
-    <ScrollView>
+
         <StackLayout class="p-4">
             <ListView items="{{ educationalResources }}" height="100%">
                 <ListView.itemTemplate>
@@ -18,5 +18,5 @@
                 </ListView.itemTemplate>
             </ListView>
         </StackLayout>
-    </ScrollView>
+
 </Page>

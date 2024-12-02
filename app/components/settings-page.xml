@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:viewModel="*"
+    navigatingTo="navigatingTo">
     <ActionBar title="Configuración" class="main-bar" />
     <ScrollView>
         <StackLayout class="p-4">
-            <Label text="Configuración de Pantalla" class="text-xl font-bold mb-4" />
-            <Label text="Ajusta el brillo y el contraste de tu pantalla para reducir la fatiga visual." 
-                   textWrap="true" 
-                   class="mb-4" />
-            
-            <Label text="Consejos de Uso" class="text-xl font-bold mb-4" />
-            <Label text="• Toma descansos regulares" class="mb-2" />
-            <Label text="• Mantén una buena postura" class="mb-2" />
-            <Label text="• Parpadea frecuentemente" class="mb-2" />
-            <Label text="• Ajusta la iluminación de tu entorno" class="mb-2" />
+
+
+            <StackLayout class="p-4 bg-purple-50 rounded-lg">
+                <Label text="Consejos de Uso" class="text-xl font-bold mb-4" />
+                <Label text="• Toma descansos regulares" class="mb-2" />
+                <Label text="• Mantén una buena postura" class="mb-2" />
+                <Label text="• Parpadea frecuentemente" class="mb-2" />
+                <Label text="• Ajusta la iluminación de tu entorno" class="mb-2" />
+            </StackLayout>
+
+            <StackLayout class="p-4 bg-purple-50 rounded-lg">
+                <!-- Opciones de Personalización de Color -->
+                <!-- Slider para elegir el tiempo entre notificaciones -->
+                <Label text="Configuración de Color" class="text-xl font-bold mb-4" />
+                <Label text="Selecciona el color de la interfaz" class="mt-4" />
+                <Button text="Elegir color" tap="onSelectColor"/>
+            </StackLayout>
+
+            <StackLayout class="p-4 bg-purple-50 rounded-lg">
+                 <!-- Slider para elegir el tiempo entre notificaciones -->
+                    <Label text="Tiempo de Notificaciones" class="text-xl font-bold mb-4" />
+                    <Label text="Elige el tiempo entre notificaciones" />
+                    <Slider minValue="1" maxValue="180" step="1" value="60"
+                        horizontalAlignment="center" tap="onSelectTime" valueChange="onSliderValueChange" />
+                    <Label text="Tiempo: 1 minuto" id="timeLabel" />
+                    <!-- Botón para elegir sonido -->
+                    <Button text="Sonido de notificación" tap="onSelectSound" />
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 </Page>
